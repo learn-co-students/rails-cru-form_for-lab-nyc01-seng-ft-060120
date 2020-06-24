@@ -1,0 +1,14 @@
+// Place all the styles related to the songs controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+form {
+  input {
+    display: block;
+    margin: .2em 0;
+  }
+}
+tr {
+  background: gray;
+  padding: 1em;
+  color: white;
+}
