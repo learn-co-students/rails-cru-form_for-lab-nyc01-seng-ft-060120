@@ -1,0 +1,4 @@
+<h1> <%= @artist.name%></h1>
+<p> <%= @artist.bio%> </p>
+
+<%= button_to("Edit Artist Information", edit_artist_path(@artist), method: :get)%>
