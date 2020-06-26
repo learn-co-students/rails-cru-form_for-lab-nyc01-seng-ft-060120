@@ -1,3 +1,11 @@
 Rails.application.routes.draw do
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+  resources :genres
+  patch 'genres/:id', to: 'genres#update'
+
+
+  resources :artists
+  patch 'artists/:id', to: 'artists#update'
+
+  resources :songs
+  patch 'songs/:id', to: 'songs#update'
 end
