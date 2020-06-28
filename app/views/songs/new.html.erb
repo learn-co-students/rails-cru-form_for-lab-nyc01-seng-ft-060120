@@ -5,10 +5,12 @@
 <p><%= f.text_field :name%></p>
 
 <p><%= f.label :genre_id, "Genre"%></p>
-<p><%= f.collection_select :genre_id, Genre.all, :id, :name%></p>
+<p><%= f.number_field :genre_id%>
+<%# <p><%= f.collection_select :genre_id, Genre.all, :id, :name%></p>
 
 <p><%= f.label :artist_id, "Artist"%></p>
-<p><%= f.collection_select :artist_id, Artist.all, :id, :name%></p>
+<p><%= f.number_field :artist_id%>
+<%# <p><%= f.collection_select :artist_id, Artist.all, :id, :name%></p>
 
 <p><%= f.submit%></p>
 <%end%>
